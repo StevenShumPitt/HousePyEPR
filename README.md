@@ -2,7 +2,7 @@
 
 Installation:
 
-In case of unknown missing packages, install windowscom and pint.
+In case of unknown missing packages, install pywin32 and pint.
 
 Use both HousePyEPR and main in one file.
 
