@@ -29,9 +29,9 @@ class House_PyEPR:
 
         pinfo = epr.ProjectInfo(project_path=self.path,
                                 project_name=self.name, design_name=self.designname)
-        pinfo.junctions['qubit1'] = {'Lj_variable': 'Q1Lj', 'rect': 'Q1Sheet', 'line': 'Q1Line'}
-        pinfo.junctions['qubit2'] = {'Lj_variable': 'Q2Lj', 'rect': 'Q2Sheet', 'line': 'Q2Line'}
-        pinfo.junctions['qubit3'] = {'Lj_variable': 'Q3Lj', 'rect': 'Q3Sheet', 'line': 'Q3Line'}
+        pinfo.junctions['qubit1'] = {'Lj_variable': 'Q1', 'rect': 'Q1Sheet', 'line': 'Q1Line'}
+        pinfo.junctions['qubit2'] = {'Lj_variable': 'Q2', 'rect': 'Q2Sheet', 'line': 'Q2Line'}
+        pinfo.junctions['qubit3'] = {'Lj_variable': 'Q3', 'rect': 'Q3Sheet', 'line': 'Q3Line'}
 
         pinfo.validate_junction_info()
         eprd = epr.DistributedAnalysis(pinfo)
